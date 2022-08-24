@@ -221,7 +221,7 @@ switch letter {
         print("consonant")
 }
 
-let speed = = 95.0
+let speed = 95.0
 
 switch speed {
     case 0.0..<20.0:
@@ -235,6 +235,8 @@ switch speed {
     
     case 50.0..<90.0:
         print("crach")
+default:
+    break
 }
 
 switch letter.lowercased() {

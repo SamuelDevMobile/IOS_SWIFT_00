@@ -26,8 +26,6 @@ func request(_ url: URL, method: String = "GET", params: [String: Any]? = nil, h
  //Faz alguma coisa
 }
 
-
-
 // Variables -> Usually Camel Case in swift and (has inference and is strongly typed)
 // var -> mutable
 var documentNumber = "123.456.789-00"
@@ -57,8 +55,8 @@ person.age = 35
 // Types -> (String, Character, Double, Float, Int, Bool
 
 var newAge: UInt8 = 78 // (from 0 to 255 and it`s unsigned -> don`t accept negative value)
-UInt8.min
-UInt8.max
+Int8.min
+Int8.max
 
 // inferences
 var myString = "this is a text"         // -> String
@@ -67,21 +65,19 @@ var anotherNumber: Float = 3456.8       // -> Float
 var sentence = false                    // -> Bool
 var character: Character = "a"          // -> Character
 
-
 // Interpolation of Strings
-var fisrtName = "Flavio"
-var lastName = "Alvarenga"
-var age = 40
+var fisrtName = "Samuel"
+var lastName = "Ribeiro"
+var age = 24
 
-let eric = "\(fisrtName.uppercased()) \(lastName.lowercased()) \(abs(age)) anos"
+let eric = "\(fisrtName.uppercased()) \(lastName.lowercased()) tem \(abs(age)) anos"
 
 // Tupla -> Type that contains other types
-var address : (street: String, number: Int, zipCode: String) = ("Av. Paulista", 1000, "01311-000")
+var address: (street: String, number: Int, zipCode: String) = ("Av. Paulista", 1000, "01311-000")
 print(address)
 
 let fiapAddress = "A FIAP fica na \(address.0), numero \(address.number) - CEP: \(address.zipCode)"
 print(fiapAddress)
-
 
 // Optional -> nullable (nil)
 var driverLicense: String?

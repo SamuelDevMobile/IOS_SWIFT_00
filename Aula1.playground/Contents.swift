@@ -268,3 +268,11 @@ var 🙀 = "Nescau"
 var 💩 = "coco"
 
 print ("O \(😻) e o \(🙀) fazem muito \(💩)")
+
+
+func greet(person: String, day: String) -> String {
+    return "Hello \(person), today is \(day)."
+}
+
+let passandoMal = greet(person: "Samuel", day: "quinta-feira")
+print(passandoMal)
